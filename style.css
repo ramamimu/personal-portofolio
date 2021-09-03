@@ -55,7 +55,6 @@ div.card{
     color: rgb(124, 122, 122);
     border-radius: .8em;
     z-index: 1;
-    /* transition: color .3s; */
     animation: change-color 5s ease-out;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
