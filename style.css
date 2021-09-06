@@ -29,7 +29,7 @@ main{
     align-content: center;
     text-align: center;
     font-family: var(--ff-primary);
-    background: #4f6d7a;
+    background: black;
 }
 .container{
     position: relative;
