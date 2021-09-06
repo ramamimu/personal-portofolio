@@ -101,10 +101,12 @@ div.card{
     animation: cardeffect 2s ease-in-out;
 } */
 
+
+/* animation */
 @keyframes cardeffect {
     100%{
         transform: rotate(-50deg) translate(0, 470px);
         width: 35em;
     }
 }
-/* Responsive Query */
+
