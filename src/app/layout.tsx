@@ -2,9 +2,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import LayoutMain from "@/components/mainLayout";
-import Layout from "@/components/mainLayout";
-import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -22,11 +19,7 @@ export default function RootLayout({
   const pathName = usePathname();
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <AnimatePresence mode="wait" key={pathName}>
-          {children}
-        </AnimatePresence>
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
