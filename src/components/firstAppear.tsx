@@ -17,7 +17,7 @@ export default function FirstAppear() {
   useEffect(() => {
     setTimeout(() => {
       setIsOpen(false);
-    }, 5500);
+    }, 5200);
   }, [isOpen]);
 
   useEffect(() => {
@@ -30,9 +30,13 @@ export default function FirstAppear() {
     <AnimatePresence mode="wait">
       {isOpen && (
         <motion.section
+          initial={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}
           ref={firstComp}
-          transition={{ type: "spring", restSpeed: 0.1, duration: 3 }}
-          exit={{ y: -heightCom }}
+          animate={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}
+          transition={{ type: "spring", duration: 3 }}
+          exit={{
+            clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)",
+          }}
           className="fixed left-0 top-0 flex h-screen w-full flex-row items-end justify-start bg-orange-500"
         >
           <div className="m-10 flex flex-col gap-4 font-monserrat text-7xl font-extrabold text-slate-100">
@@ -65,13 +69,13 @@ export default function FirstAppear() {
                       opacity: 1,
                       translateY: 0,
                     }}
-                    transition={{ duration: 1, delay: 3 + index * 0.2 }}
+                    transition={{ duration: 1, delay: 2.5 + index * 0.2 }}
                   >
                     <motion.p
                       animate={{
                         color: "rgb(15 23 42)",
                       }}
-                      transition={{ duration: 1, delay: 4 + index * 0.2 }}
+                      transition={{ duration: 1, delay: 3.5 + index * 0.2 }}
                     >
                       {item}
                     </motion.p>{" "}

@@ -2,41 +2,29 @@
 
 import { useState } from "react";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import { motion, AnimatePresence } from "framer-motion";
 
 import Layout from "@/components/mainLayout";
 import FirstAppear from "@/components/firstAppear";
+import ProfileText from "@/components/profileText";
+import NextImage from "@/components/nextImage";
+import RandomText from "@/components/randomText";
 
 export default function Dashboard() {
   const pathName = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   return (
     <Layout>
+      <ProfileText />
       <FirstAppear />
-      <div className="bg-orange-400 p-10">
-        <AnimatePresence mode="wait">
-          {isOpen && (
-            <motion.div
-              className="h-96 w-96 rounded-3xl bg-blue-400 p-10"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1 }}
-              exit={{ opacity: 0 }}
-            >
-              Dashboard
-            </motion.div>
-          )}{" "}
-        </AnimatePresence>
-        <p
-          onClick={() => {
-            setIsOpen(!isOpen);
-          }}
-        >
-          play the box
-        </p>
+      <RandomText />
+      <div className="flex h-screen w-full items-center justify-center bg-black p-10">
+        <NextImage src="/neom.jpg" alt="ramamimu" width={1000} height={1000} />
+      </div>
+      <div className="flex h-screen w-full items-center justify-center bg-black p-10">
+        <NextImage src="/neom.jpg" alt="ramamimu" width={1000} height={1000} />
       </div>
     </Layout>
   );
