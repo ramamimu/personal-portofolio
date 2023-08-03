@@ -1,13 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
-const title: string[] = ["rama", " | ", "mimu"];
-const roles: string[] = [
-  "A Software Engineer",
-  "Frontend Developer",
-  "Backend Developer",
-  "Cloud Engineer",
-];
+import { title, roles } from "@/types/appearText";
 
 export default function FirstAppear() {
   const [isOpen, setIsOpen] = useState(true);
@@ -33,7 +27,7 @@ export default function FirstAppear() {
           initial={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}
           ref={firstComp}
           animate={{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }}
-          transition={{ type: "spring", duration: 3 }}
+          transition={{ duration: 2 }}
           exit={{
             clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)",
           }}

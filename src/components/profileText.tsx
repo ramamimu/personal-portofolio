@@ -1,18 +1,12 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
-const title: string[] = ["rama", " | ", "mimu"];
-const roles: string[] = [
-  "A Software Engineer",
-  "Frontend Developer",
-  "Backend Developer",
-  "Cloud Engineer",
-];
+import { title, roles } from "@/types/appearText";
 
 export default function ProfileText() {
   return (
     <AnimatePresence mode="wait">
-      <section className="absolute left-0 top-0 flex h-screen w-full flex-row items-end justify-start">
+      <section className="absolute left-0 top-0 flex h-screen w-full flex-row items-end justify-start py-20">
         <div className="m-10 flex flex-col gap-4 font-monserrat text-7xl font-extrabold text-slate-100">
           {roles.map((item, index) => {
             return (
@@ -34,7 +28,7 @@ export default function ProfileText() {
           <div className="flex gap-2">
             {title.map((item, index) => {
               return (
-                <div className="text-green-900" key={index}>
+                <div className="text-black" key={index}>
                   <p>{item}</p>
                 </div>
               );
