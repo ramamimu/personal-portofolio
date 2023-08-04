@@ -1,6 +1,5 @@
-import { useState } from "react";
 import NextImage from "../tools/nextImage";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { experiences, Experience } from "@/types/organizations";
 import ExpandCard from "@/components/tools/expandCard";
 import Link from "next/link";
