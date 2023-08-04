@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { title, roles } from "@/types/appearText";
 
 export default function FirstAppear() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const firstComp = useRef<HTMLDivElement>(null);
   const [heightCom, setHeightCom] = useState(0);
 

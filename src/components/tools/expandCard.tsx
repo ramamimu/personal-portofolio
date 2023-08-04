@@ -4,16 +4,18 @@ import { useState } from "react";
 export default function ExpandCard({
   children1,
   children2,
+  addedClass,
 }: {
   children1: JSX.Element;
   children2: JSX.Element;
+  addedClass?: string;
 }) {
   const [isExpand, setIsExpand] = useState(false);
   return (
     <section
       className={`${
         isExpand ? "shadow-lg" : "shadow-2xl"
-      } relative w-[500px] place-self-start rounded-md shadow-slate-500 transition-all duration-500 hover:shadow-lg hover:shadow-slate-500`}
+      } relative w-[500px] place-self-start rounded-md shadow-slate-500 transition-all duration-500 hover:shadow-lg hover:shadow-slate-500 ${addedClass}`}
     >
       <div className="p-10">
         {children1}
