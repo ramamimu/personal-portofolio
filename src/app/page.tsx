@@ -8,7 +8,7 @@ import RandomText from "@/components/randomText";
 import IntroductionePage from "@/components/introductionPage";
 import Organization from "@/components/organization";
 import OrganizationPage from "@/components/organizationPage";
-import Project from "@/components/project";
+import ProjectPage from "@/components/projectPage";
 
 export default function Dashboard() {
   return (
@@ -25,7 +25,7 @@ export default function Dashboard() {
       <IntroductionePage />
       <Organization />
       <OrganizationPage />
-      <Project />
+      <ProjectPage />
       <div className="flex h-screen w-full items-center justify-center bg-black p-10">
         <NextImage src="/neom.jpg" alt="ramamimu" width={1000} height={1000} />
       </div>
