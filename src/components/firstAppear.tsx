@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { title, roles } from "@/types/appearText";
 
 export default function FirstAppear() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const firstComp = useRef<HTMLDivElement>(null);
   const [heightCom, setHeightCom] = useState(0);
 
@@ -31,7 +31,7 @@ export default function FirstAppear() {
           exit={{
             clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)",
           }}
-          className="fixed left-0 top-0 flex h-screen w-full flex-row items-end justify-start bg-orange-500"
+          className="fixed left-0 top-0 z-10 flex h-screen w-full flex-row items-end justify-start bg-orange-500"
         >
           <div className="m-10 flex flex-col gap-4 font-monserrat text-7xl font-extrabold text-slate-100">
             {roles.map((item, index) => {
