@@ -1,6 +1,6 @@
 import ExpandCard from "@/components/tools/expandCard";
 import Link from "next/link";
-import NextImage from "./tools/nextImage";
+import NextImage from "../tools/nextImage";
 
 import { BottomComponent, TopComponent, projects } from "@/types/projects";
 
