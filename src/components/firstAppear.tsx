@@ -53,7 +53,7 @@ export default function FirstAppear() {
                 </motion.div>
               );
             })}
-            <div className="flex gap-2">
+            <div className="flex gap-2 text-slate-100">
               {title.map((item, index) => {
                 return (
                   <motion.div
