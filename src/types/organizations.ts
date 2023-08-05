@@ -46,7 +46,7 @@ export const experiences: Experience[] = [
     ],
     projects: ["Library Database System", "Web Scrapping"],
     jobDescription:
-      "As an undergraduate student at ITS Surabaya, you will have the opportunity to embark on an enriching academic journey and be part of a vibrant and innovative learning community. During your time at ITS, you will play a vital role in shaping your future career and personal growth. TS offers a wide range of undergraduate programs across various disciplines, including engineering, science, technology, business, and more. You can choose a program that aligns with your interests and career aspirations.",
+      "As an undergraduate student at ITS Surabaya, you will have the opportunity to embark on an enriching academic journey and be part of a vibrant and innovative learning community. During your time at ITS, you will play a vital role in shaping your future career and personal growth. ITS offers a wide range of undergraduate programs across various disciplines, including engineering, science, technology, business, and more. You can choose a program that aligns with your interests and career aspirations.",
     about:
       "Sepuluh Nopember Institute of Technology (Indonesian: Institut Teknologi Sepuluh Nopember, lit. '10th of November Institute of Technology'; abbreviated as ITS) is a national public university located in Surabaya, East Java, with a strong emphasis on scientific, engineering, and vocational education system. Located on 180-hectares green area, ITS is home to more than 1,000 faculty members and over 20,000 undergraduate and graduate students.",
   },
