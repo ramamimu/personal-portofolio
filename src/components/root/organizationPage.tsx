@@ -1,5 +1,5 @@
 import Logos from "@/components/organization/logos";
-import DescriptionOrg from "./organization/descriptionOrg";
+import DescriptionOrg from "@/components/organization/descriptionOrg";
 
 export default function OrganizationPage() {
   return (

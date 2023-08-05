@@ -1,5 +1,5 @@
 "use client";
-import { use, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 import { introText } from "@/types/appearText";
 
