@@ -6,7 +6,7 @@ import { BottomComponent, TopComponent, projects } from "@/types/projects";
 
 export default function ProjectPage() {
   return (
-    <section className="min-h-screen bg-orange-500 py-10 text-slate-50 ">
+    <section className="min-h-screen bg-yellow-500 py-10 text-slate-50 ">
       <h2 className="py-10 text-center text-4xl font-semibold text-slate-800">
         My Projects
       </h2>
