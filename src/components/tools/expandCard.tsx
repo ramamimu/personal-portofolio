@@ -15,7 +15,7 @@ export default function ExpandCard({
     <section
       className={`${
         isExpand ? "shadow-lg" : "shadow-2xl"
-      } relative w-[500px] place-self-start rounded-md shadow-slate-500 transition-all duration-500 hover:shadow-lg hover:shadow-slate-500 ${addedClass}`}
+      } relative w-[300px] place-self-start rounded-md shadow-slate-500 transition-all duration-500 hover:shadow-lg hover:shadow-slate-500 sm:w-[500px] ${addedClass}`}
     >
       <div className="p-10">
         {children1}

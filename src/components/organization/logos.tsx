@@ -4,7 +4,7 @@ import { organizationLogos } from "@/types/organizations";
 
 export default function Logos() {
   return (
-    <div className="flex items-center justify-center gap-10 py-10">
+    <div className="flex flex-wrap items-center justify-center gap-10 py-10">
       {organizationLogos.map((item) => {
         return (
           <div

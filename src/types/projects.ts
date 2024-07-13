@@ -1,3 +1,5 @@
+import { link } from "fs";
+
 type Documentations = {
   image: {
     title: string;
@@ -15,22 +17,58 @@ export type TopComponent = {
     logo: string;
     associated: string;
   };
-  description: string;
   tools: string[];
+  documentations: Documentations;
 };
 
 export type BottomComponent = {
-  tools: string[];
-  documentations: Documentations;
   about: {
     name: string;
     description: string;
   };
+  description: string;
 };
 
 type Project = TopComponent & BottomComponent;
 
 export const projects: Project[] = [
+  {
+    title: "Chatbot Using RAG (Retrieval-Augmented Generation)",
+    company: {
+      associated: "ITS Surabaya",
+      logo: "/icons/its-surabaya.png",
+    },
+    description:
+      "As my final project to finish my Bachelor program, i created a chatbot which able to answer question from documents. Once the question throwing to the chatbot, it will see through documents as reference and answer all of question based on it",
+    tools: [
+      "Python",
+      "Langchain - Retrieval-Agumented Generation (RAG)",
+      "FastApi",
+      "Huggingface",
+      "Multilingual E5 Small - Sentence Transformer Model",
+      "GPT3.5 Turbo - Text Generation Model",
+      "FAISS",
+      "Alembic - Database Migration",
+      "Docker",
+    ],
+    documentations: {
+      image: {
+        link: "/projects/chatbot-api.png",
+        title: "Chatbot API service",
+      },
+      links: [
+        {
+          name: "github chatbot API",
+          link: "https://github.com/ramamimu/chatbot-api",
+        },
+      ],
+    },
+    about: {
+      name: "Chatbot API",
+      description:
+        "The chatbot is able to use document (PDF) or text as reference for answering incoming question. The method called RAG (Retrieval-Augmented Generation) which consist of three processing: 1. Indexing - Split, embed, and put the text into vector database (Vectorstore); 2. Retrieval: Get the particular contents from chunks (some part of splitted relevant document) from Vectorstore; 3. Generation: Process the retrieval to be human-readable language as answer of the question. For seamless communication, i put all of the process to be Back End Service using Fast API.",
+    },
+  },
   {
     title: "Recommendation Places App in Yogyakarta",
     company: {
@@ -46,6 +84,8 @@ export const projects: Project[] = [
       "Redis",
       "MySQL",
       "docker",
+      "Google Cloud Platform",
+      "Cloud Build",
       "Cloud Run",
     ],
     documentations: {
@@ -191,9 +231,9 @@ export const projects: Project[] = [
       ],
     },
     about: {
-      name: "Basestation IRIS 2022",
+      name: "Project",
       description:
-        "The software has received recognition in several competitions where it was used as the Basestation, including first place in the Indonesia Robotic Contest 2022 in Surabaya, Indonesia and third place in the RoboCupSoccer Middle Size 2022 in Bangkok, Thailand.",
+        "This project is created for fulfill final project basis data management on Institute Technology Sepuluh Nopember",
     },
   },
   {

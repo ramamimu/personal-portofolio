@@ -31,12 +31,16 @@ export const organizationLogos: Organization[] = [
     name: "PLN Gresik",
     logo: "/icons/pln.png",
   },
+  {
+    name: "Gojek",
+    logo: "/icons/gojek.png",
+  },
 ];
 
 export const experiences: Experience[] = [
   {
     name: "ITS Surabaya",
-    duration: "Aug 2020 - current ",
+    duration: "Aug 2020 - currently ",
     icon: "/icons/its-surabaya.png",
     link: "https://www.its.ac.id/id/beranda/",
     positions: [
@@ -44,7 +48,11 @@ export const experiences: Experience[] = [
       "Net Centric Computing Laboratory Assistant",
       "Operating System Course Assistant",
     ],
-    projects: ["Library Database System", "Web Scrapping"],
+    projects: [
+      "Chatbot RAG (Retrieval-Augmented Generation)",
+      "Library Database System",
+      "Web Scrapping",
+    ],
     jobDescription:
       "As an undergraduate student at ITS Surabaya, you will have the opportunity to embark on an enriching academic journey and be part of a vibrant and innovative learning community. During your time at ITS, you will play a vital role in shaping your future career and personal growth. ITS offers a wide range of undergraduate programs across various disciplines, including engineering, science, technology, business, and more. You can choose a program that aligns with your interests and career aspirations.",
     about:
@@ -85,5 +93,21 @@ export const experiences: Experience[] = [
       "I am responsible to both front-end and back-end to build an integrated monitoring system. I use vue.js, tailwind CSS, typescript, pinia for global state management for front-end. On the back-end, I am utilizing node.js and express for API and session management also dev an integrated server with Postgres database. Additionally, I also implement docker for deploy the app and set up a simple Github workflow to check code quality by a linter.",
     about:
       "PT PLN Nusantara Power, known as PLN NP, is a sub-holding of PT PLN (Persero) which is engaged in the field of electricity generation and other supporting businesses. Established since October 3, 1995, PT PLN NP have never stopped offering a variety of power generation solutions to meet the needs of reliable and quality electricity. PLN NP continuously strives to take more greater role and contribution in supporting national energy security in terms of electricity supply by managing assets amounting to IDR 174.78 Trillion and contributing 28% of the total national generating capacity.",
+  },
+  {
+    name: "GoTo - Gojek",
+    duration: "Aug 2023 - December 2023",
+    icon: "/icons/gojek.png",
+    link: "linkedin.com/company/gotogroup/",
+    positions: ["Software Engineer Intern"],
+    projects: [
+      "Weekly Tracker KPI Automation",
+      "FBON Service",
+      "Web Concierge",
+    ],
+    jobDescription:
+      "Part of 32 interns at GoTo, selected over 7600++ applicants under Kampus Merdeka program batch 5 from ministry of education Indonesia. I was placed on Gojek, being part of Transport Team and mentored by Swatantra Jain. I got some various tasks here are all of them| Weekly tracker automation: managing metrics data from 15++ teams at Transport and Driver platform; FBON service: Inject middleware to get order number and request ID through Golang-context; Web Concierge: Create OTP component in front end Web Concierge dashboard",
+    about:
+      "Gojek is Southeast Asia's leading on-demand, multi-service tech platform providing access to a wide range of services across transport, payments, food delivery, logistics, and many more.",
   },
 ];

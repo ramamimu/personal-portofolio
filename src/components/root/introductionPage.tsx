@@ -49,7 +49,7 @@ export default function IntroductionePage() {
     <motion.section
       ref={introRef}
       id="intro"
-      className="flex min-h-screen flex-col items-center justify-center gap-8 bg-slate-100"
+      className="flex flex-col items-center justify-center gap-8 bg-slate-100 px-5 py-20"
     >
       {isInView &&
         introText.map((item, index) => (
@@ -61,7 +61,7 @@ export default function IntroductionePage() {
             }}
             transition={{ duration: 1, delay: index * 1.2 }}
             key={item}
-            className="text-6xl font-bold text-slate-700"
+            className="text-center text-xl font-bold text-slate-700 md:text-6xl"
           >
             {item}
           </motion.p>

@@ -6,8 +6,8 @@ import { title, roles } from "@/types/appearText";
 export default function ProfileText() {
   return (
     <AnimatePresence mode="wait">
-      <section className="absolute left-0 top-0 flex h-screen w-full flex-row items-end justify-start">
-        <div className="m-10 flex flex-col gap-4 font-monserrat text-7xl font-extrabold text-slate-100">
+      <section className="absolute -top-10 left-0 flex h-screen w-full flex-row items-end justify-start">
+        <div className="m-10 flex flex-col gap-4 font-monserrat text-3xl font-extrabold text-slate-100 md:text-7xl">
           {roles.map((item, index) => {
             return (
               <motion.div

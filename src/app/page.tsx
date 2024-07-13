@@ -13,7 +13,7 @@ export default function Dashboard() {
   return (
     <Layout>
       <ProfileText />
-      <FirstAppear />
+      {/* <FirstAppear /> */}
       <div className="flex min-h-screen w-full items-center justify-center bg-black py-24">
         <NextImage src="/neom.jpg" alt="ramamimu" width={1000} height={1000} />
       </div>

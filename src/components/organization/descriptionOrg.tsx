@@ -101,25 +101,27 @@ function TopDescription({
 }: TopDescriptionProps) {
   return (
     <>
-      <Link href={link} target="_blank">
-        <div className="absolute -right-8 top-12 inline-block rounded-full bg-slate-100 p-8">
-          <NextImage src={icon} alt="" height={80} width={80} />
-        </div>
-      </Link>
-      <div className="py-5">
-        <h2 className="text-3xl font-semibold">{name}</h2>
-        <p>{duration}</p>
-        <div className="py-5 pt-2">
-          {positions.map((item, index) => {
-            return <p key={index}>{item}</p>;
-          })}
-        </div>
+      <div>
+        <Link href={link} target="_blank" className="float-left mr-4">
+          <div className="-right-8 top-12 inline-block rounded-full bg-slate-100 p-3">
+            <NextImage src={icon} alt="" height={50} width={50} />
+          </div>
+        </Link>
         <div>
-          <h3 className="text-2xl font-semibold">Projects</h3>
-          {projects.map((item, index) => {
-            return <p key={index}>{item}</p>;
-          })}
+          <h2 className="text-xl font-semibold md:text-3xl">{name}</h2>
+          <p>{duration}</p>
+          <div className="py-5 pt-2">
+            {positions.map((item, index) => {
+              return <p key={index}>{item}</p>;
+            })}
+          </div>
         </div>
+      </div>
+      <div className="pb-3">
+        <h3 className="text-2xl font-semibold">Projects</h3>
+        {projects.map((item, index) => {
+          return <p key={index}>- {item}</p>;
+        })}
       </div>
     </>
   );
