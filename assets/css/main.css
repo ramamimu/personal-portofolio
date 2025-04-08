@@ -1,1 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --color-primary-dark: #64636e;
+  --color-primary-light: #ffffff;
+
+  --font-roboto: "Roboto", sans-serif;
+}
+
+.quote-container {
+  @apply row-span-1 space-y-4;
+}
+
+.quote-box {
+  @apply flex w-52 flex-col space-y-6;
+}
+
+.quote-writer {
+  @apply text-base font-normal;
+}
+
+.button {
+  @apply flex cursor-pointer items-center justify-center gap-2 rounded-md px-4 py-2;
+}
+
+.button-dark {
+  @apply bg-slate-800 text-slate-200;
+}
+
+.button-light {
+  @apply text-primary-dark bg-slate-200;
+}
+
+.bg-dark {
+  @apply bg-primary-dark/[70%];
+}
+
+.bg-light {
+  @apply bg-primary-light/[60%];
+}
+
+.scale-110-animation {
+  @apply duration-300 ease-in-out hover:scale-110;
+}
