@@ -24,7 +24,11 @@ onMounted(() => {
       "<",
     );
 
-  const exclamationTl = gsap.timeline({ repeat: -1, repeatDelay: 2 });
+  const exclamationTl = gsap.timeline({
+    repeat: -1,
+    delay: 2.5,
+    repeatDelay: 2,
+  });
   exclamationTl
     .to(".exclamation", {
       duration: 1,
@@ -63,9 +67,9 @@ onMounted(() => {
         </div>
       </div>
       <div
-        class="relative my-32 flex min-h-screen max-w-[360px] flex-col gap-7 md:h-screen lg:my-0"
+        class="relative flex min-h-screen max-w-[360px] flex-col justify-center gap-7 md:h-screen lg:my-0"
       >
-        <div class="flex items-center space-x-4">
+        <div class="flex space-x-4">
           <a href="https://github.com/ramamimu" target="_blank">
             <img
               src="/assets/images/icons/github.svg"
