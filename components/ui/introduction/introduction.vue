@@ -1,19 +1,91 @@
 <script lang="ts" setup>
 import ButtonLight from "~/components/button/button-light.vue";
+import gsap from "gsap";
+
+onMounted(() => {
+  // the openingContainer disappear using clip-path circle
+  const timeStaggers = 0.8;
+
+  const openingContainerTl = gsap.timeline();
+  openingContainerTl
+    .from(".opening-container p", {
+      y: 80,
+      opacity: 0,
+      stagger: timeStaggers,
+    })
+    .to(".opening-container p", { stagger: timeStaggers })
+    .to(
+      ".opening-container",
+      {
+        duration: 2,
+        ease: "power2.out",
+        clipPath: "circle(0%)",
+      },
+      "<",
+    );
+
+  const exclamationTl = gsap.timeline({ repeat: -1, repeatDelay: 2 });
+  exclamationTl
+    .to(".exclamation", {
+      duration: 1,
+      rotate: 180,
+      ease: "bounce.out",
+      // i want to rotate the exclamation mark in the bottom
+      transformOrigin: "50% 80%",
+      y: 5,
+    })
+    .to(
+      ".exclamation",
+      {
+        y: 0,
+        rotate: 360,
+        transformOrigin: "50% 80%",
+        duration: 0.5,
+        ease: "bounce.in",
+      },
+      "+=0.5",
+    );
+});
 </script>
 
 <template>
-  <div class="relative grid h-screen grid-cols-8 overflow-hidden bg-center">
+  <div class="relative grid min-h-screen grid-cols-8 overflow-hidden bg-center">
     <section
-      class="bg-dark col-span-8 flex items-center justify-center text-white md:col-span-3"
+      class="bg-dark relative col-span-8 flex items-center justify-center px-3 text-white sm:px-0 md:col-span-4"
     >
-      <div class="relative flex max-w-[360px] flex-col gap-7">
-        <div class="flex items-center space-x-4">
-          <img src="/assets/images/icons/github.svg" class="w-8" alt="" />
-          <img src="/assets/images/icons/linkedin.svg" class="w-8" alt="" />
+      <div
+        class="opening-container bg-primary-dark absolute z-10 flex h-full w-full flex-col items-center justify-center text-5xl"
+        style="clip-path: circle(100%)"
+      >
+        <div>
+          <p class="pb-3">Hi</p>
+          <p>I'm Rama</p>
         </div>
-        <h1 class="text-5xl font-semibold tracking-wider">
-          Get to<br />know me!
+      </div>
+      <div class="relative my-32 flex max-w-[360px] flex-col gap-7 lg:my-0">
+        <div class="flex items-center space-x-4">
+          <a href="https://github.com/ramamimu" target="_blank">
+            <img
+              src="/assets/images/icons/github.svg"
+              class="scale-110-animation w-8 cursor-pointer"
+              alt=""
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ahmad-ferdiansyah-ramadhani/"
+            target="_blank"
+          >
+            <img
+              src="/assets/images/icons/linkedin.svg"
+              class="scale-110-animation w-8 cursor-pointer"
+              alt=""
+            />
+          </a>
+        </div>
+        <h1
+          class="relative text-3xl font-semibold tracking-wider md:text-4xl lg:text-5xl"
+        >
+          Get to<br />know me<span class="exclamation absolute">!</span>
         </h1>
         <div class="flex flex-col space-y-4 text-base">
           <p>
@@ -27,48 +99,32 @@ import ButtonLight from "~/components/button/button-light.vue";
             reflects my growth, challenges, and accomplishments in these
             technologies.
           </p>
-          <p>
+          <!-- uncomment if there's another page exist -->
+          <!-- <p>
             If you're short on time to enjoy the full details, feel free to
             download my CV below.
-          </p>
+          </p> -->
         </div>
         <div class="w-20">
-          <ButtonLight>
-            <Icon
-              name="material-symbols-download-2"
-              class="text-primary-dark"
-            />
-            <p>cv</p>
-          </ButtonLight>
+          <a href="/resume.pdf" download>
+            <ButtonLight>
+              <Icon
+                name="material-symbols-download-2"
+                class="text-primary-dark"
+              />
+              <p>cv</p>
+            </ButtonLight>
+          </a>
         </div>
       </div>
     </section>
     <section
-      class="bg-light text-primary-dark col-span-8 grid grid-rows-2 place-items-center text-xl font-semibold md:col-span-2"
-    >
-      <div class="quote-container">
-        <div class="quote-box">
-          <p>
-            “Give glad tidings and do not repel people. Make things easy and do
-            not make things difficult”
-          </p>
-          <p class="quote-writer">Sahih al-Bukhari, 3559</p>
-        </div>
-      </div>
-      <div class="quote-container">
-        <div class="quote-box">
-          <p>"A man who stands for nothing will fall for anything"</p>
-          <p class="quote-writer">Malcolm X</p>
-        </div>
-      </div>
-    </section>
-    <section
-      class="bg-primary-light/[50%] col-span-8 flex items-center md:col-span-3"
+      class="bg-primary-light/[50%] relative col-span-8 flex items-center justify-center py-24 md:col-span-4 md:flex-none md:py-0"
     >
       <img
         src="/assets/images/introduction/me.png"
         alt=""
-        class="absolute w-[800] rounded-4xl"
+        class="left-32 w-96 md:absolute md:w-[800px] md:rounded-4xl"
       />
     </section>
   </div>

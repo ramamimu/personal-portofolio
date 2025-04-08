@@ -1,5 +1,5 @@
 <template>
-  <div class="duration-300 ease-in-out hover:scale-110">
+  <div class="scale-110-animation">
     <slot />
   </div>
 </template>

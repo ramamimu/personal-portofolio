@@ -1,4 +1,12 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+import { ref, type VNodeRef } from "vue";
+
+gsap.registerPlugin(ScrollTrigger);
+const storylineContainer = ref<VNodeRef | null>(null);
+</script>
 
 <template>
   <!-- only scroll y -->

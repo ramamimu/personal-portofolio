@@ -23,6 +23,7 @@
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
+    "@types/gsap": "^1.20.2",
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11"
   }
