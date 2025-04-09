@@ -10,19 +10,14 @@ onMounted(() => {
   openingContainerTl
     .from(".opening-container p", {
       y: 80,
-      opacity: 0,
       stagger: timeStaggers,
     })
-    .to(".opening-container p", { stagger: timeStaggers })
-    .to(
-      ".opening-container",
-      {
-        duration: 2,
-        ease: "power2.out",
-        clipPath: "circle(0%)",
-      },
-      "<",
-    );
+    .to(".opening-container p", { stagger: timeStaggers, opacity: 100 }, "<")
+    .to(".opening-container", {
+      duration: 2,
+      ease: "power2.out",
+      clipPath: "circle(0%)",
+    });
 
   const exclamationTl = gsap.timeline({
     repeat: -1,
@@ -62,8 +57,8 @@ onMounted(() => {
         style="clip-path: circle(100%)"
       >
         <div>
-          <p class="pb-3">Hi</p>
-          <p>I'm Rama</p>
+          <p class="pb-3 opacity-0">Hi</p>
+          <p class="opacity-0">I'm Rama</p>
         </div>
       </div>
       <div
