@@ -4,18 +4,31 @@ import gsap from "gsap";
 
 onMounted(() => {
   // the openingContainer disappear using clip-path circle
-  const timeStaggers = 0.8;
+  const timeStaggers = 1.5;
+
+  if (window.matchMedia("(min-width: 768px)").matches) {
+    gsap.to(".gsap-image-branding", {
+      duration: 3,
+      x: -20,
+      ease: "power2.out",
+    });
+  }
 
   const openingContainerTl = gsap.timeline();
   openingContainerTl
-    .from(".opening-container p", {
+    .from(".gsap-opening-container p", {
       y: 80,
       stagger: timeStaggers,
     })
-    .to(".opening-container p", { stagger: timeStaggers, opacity: 100 }, "<")
-    .to(".opening-container", {
+    .to(
+      ".gsap-opening-container p",
+      { stagger: timeStaggers, opacity: 100 },
+      "<",
+    )
+    .to(".gsap-opening-container", {
       duration: 2,
       ease: "power2.out",
+      delay: 0.2,
       clipPath: "circle(0%)",
     });
 
@@ -25,7 +38,7 @@ onMounted(() => {
     repeatDelay: 2,
   });
   exclamationTl
-    .to(".exclamation", {
+    .to(".gsap-exclamation", {
       duration: 1,
       rotate: 180,
       ease: "bounce.out",
@@ -34,7 +47,7 @@ onMounted(() => {
       y: 5,
     })
     .to(
-      ".exclamation",
+      ".gsap-exclamation",
       {
         y: 0,
         rotate: 360,
@@ -53,7 +66,7 @@ onMounted(() => {
       class="bg-dark relative col-span-8 flex items-center justify-center px-3 text-white sm:px-0 md:col-span-4"
     >
       <div
-        class="opening-container bg-primary-dark absolute z-10 flex h-full w-full flex-col items-center justify-center text-5xl"
+        class="gsap-opening-container bg-primary-dark absolute z-10 flex h-full w-full flex-col items-center justify-center text-5xl"
         style="clip-path: circle(100%)"
       >
         <div>
@@ -86,7 +99,7 @@ onMounted(() => {
         <h1
           class="relative text-3xl font-semibold tracking-wider md:text-4xl lg:text-5xl"
         >
-          Get to<br />know me<span class="exclamation absolute">!</span>
+          Get to<br />know me<span class="gsap-exclamation absolute">!</span>
         </h1>
         <div class="flex flex-col space-y-4 text-base">
           <p>
@@ -125,7 +138,7 @@ onMounted(() => {
       <img
         src="/assets/images/introduction/me.png"
         alt=""
-        class="left-32 w-96 md:absolute md:w-[800px] md:rounded-4xl"
+        class="gsap-image-branding left-36 w-96 md:absolute md:w-[800px] md:rounded-4xl"
       />
     </section>
   </div>
