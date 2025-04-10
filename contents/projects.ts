@@ -5,7 +5,7 @@ export const projects: Project[] = [
     title: "Chatbot Using Retrieval-Augmented Generation (RAG)",
     company: {
       associated: "ITS Surabaya",
-      logo: "/_nuxt/assets/images/companies/its-surabaya.png",
+      logo: "/images/companies/its-surabaya.png",
     },
     tools: [
       "Python",
@@ -20,7 +20,7 @@ export const projects: Project[] = [
     ],
     documentations: {
       image: {
-        link: "/_nuxt/assets/images/projects/chatbot-api.png",
+        link: "/images/projects/chatbot-api.png",
         title: "Chatbot API service",
       },
       links: [
@@ -35,7 +35,7 @@ export const projects: Project[] = [
     title: "Recommendation Places App in Yogyakarta",
     company: {
       associated: "Project Capstone Bangkit",
-      logo: "/_nuxt/assets/images/companies/bangkit.png",
+      logo: "/images/companies/bangkit.png",
     },
     tools: [
       "Node.js",
@@ -50,7 +50,7 @@ export const projects: Project[] = [
     ],
     documentations: {
       image: {
-        link: "/_nuxt/assets/images/projects/capstone.png",
+        link: "/images/projects/capstone.png",
         title: "Cloud Architecture",
       },
       links: [
@@ -69,7 +69,7 @@ export const projects: Project[] = [
     title: "Monitoring and Controlling Turbines Website",
     company: {
       associated: "PLN Nusantara Power",
-      logo: "/_nuxt/assets/images/companies/pln.png",
+      logo: "/images/companies/pln.png",
     },
     tools: [
       "Vue.js",
@@ -83,7 +83,7 @@ export const projects: Project[] = [
     ],
     documentations: {
       image: {
-        link: "/_nuxt/assets/images/projects/pjb-pln.png",
+        link: "/images/projects/pjb-pln.png",
         title: "controlling turbine page",
       },
       links: [],
@@ -93,7 +93,7 @@ export const projects: Project[] = [
     title: "Basestation IRIS",
     company: {
       associated: "IRIS ITS",
-      logo: "/_nuxt/assets/images/companies/iris-its.png",
+      logo: "/images/companies/iris-its.png",
     },
     tools: [
       "Vue.js",
@@ -113,7 +113,7 @@ export const projects: Project[] = [
     ],
     documentations: {
       image: {
-        link: "/_nuxt/assets/images/projects/bs-2023.png",
+        link: "/images/projects/bs-2023.png",
         title: "UI Basestation 2023",
       },
       links: [
@@ -132,12 +132,12 @@ export const projects: Project[] = [
     title: "Website IRIS 2022",
     company: {
       associated: "IRIS ITS",
-      logo: "/_nuxt/assets/images/companies/iris-its.png",
+      logo: "/images/companies/iris-its.png",
     },
     tools: ["React.js", "Next.js", "Tailwind CSS", "Headless UI"],
     documentations: {
       image: {
-        link: "/_nuxt/assets/images/projects/iris-web.png",
+        link: "/images/projects/iris-web.png",
         title: "IRIS Website 2022",
       },
       links: [
@@ -152,12 +152,12 @@ export const projects: Project[] = [
     title: "Library Database System",
     company: {
       associated: "ITS Surabaya",
-      logo: "/_nuxt/assets/images/companies/its-surabaya.png",
+      logo: "/images/companies/its-surabaya.png",
     },
     tools: ["Vue.js", "Tailwind CSS", "Chart.js", "Node.js", "Express"],
     documentations: {
       image: {
-        link: "/_nuxt/assets/images/projects/library-db.png",
+        link: "/images/projects/library-db.png",
         title: "UI Library Management System",
       },
       links: [
@@ -172,12 +172,12 @@ export const projects: Project[] = [
     title: "Front-end TedxITS 2022",
     company: {
       associated: "ITS Surabaya",
-      logo: "/_nuxt/assets/images/companies/its-surabaya.png",
+      logo: "/images/companies/its-surabaya.png",
     },
     tools: ["React.js", "Next.js", "Typescript", "Tailwind CSS", "Headless UI"],
     documentations: {
       image: {
-        link: "/_nuxt/assets/images/projects/tedx-its.png",
+        link: "/images/projects/tedx-its.png",
         title: "Landing Page TedxITS 2022",
       },
       links: [
