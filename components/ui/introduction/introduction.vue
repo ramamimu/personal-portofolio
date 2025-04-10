@@ -58,26 +58,6 @@ onMounted(() => {
       },
       "+=0.5",
     );
-
-  gsap.set(".gsap-image-branding-container", {
-    backgroundColor: "rgba(255, 255, 255, 0.5)",
-  });
-
-  gsap.to(".gsap-image-branding-container", {
-    scrollTrigger: {
-      trigger: ".gsap-image-branding-container",
-      start: "top top",
-      end: "bottom top",
-      scrub: 1,
-      onUpdate: (self) => {
-        const opacity = self.direction === -1 ? 0.5 : 0;
-        gsap.to(".gsap-image-branding-container", {
-          backgroundColor: `rgba(255, 255, 255, ${opacity})`,
-          ease: "power2.out",
-        });
-      },
-    },
-  });
 });
 </script>
 
