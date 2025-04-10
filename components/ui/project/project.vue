@@ -4,7 +4,7 @@ import { projects } from "~/contents/projects";
 
 <template>
   <div class="container mx-auto min-h-screen py-20">
-    <div class="max-w-[700px] px-4 md:px-32 md:py-72">
+    <div class="max-w-[700px] px-4 py-32 md:px-32 md:py-72">
       <h1 class="text-lv-1 tracking-wide text-gray-800">Projects</h1>
       <p class="mt-4 text-gray-600">
         Through this project, i’m not just building something but also building
@@ -33,7 +33,9 @@ import { projects } from "~/contents/projects";
         <p class="pt-1 text-center text-xs">
           {{ project.documentations.image.title }}
         </p>
-        <h3 class="text-lv-3">Documentations</h3>
+        <h3 v-if="project.documentations.links.length > 0" class="text-lv-3">
+          Documentations
+        </h3>
         <div class="flex flex-wrap gap-2">
           <a
             v-for="doc in project.documentations.links"

@@ -1,19 +1,22 @@
 <script lang="ts" setup>
 import ButtonLight from "~/components/button/button-light.vue";
 import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 onMounted(() => {
   // the openingContainer disappear using clip-path circle
-  const timeStaggers = 1.5;
 
   if (window.matchMedia("(min-width: 768px)").matches) {
     gsap.to(".gsap-image-branding", {
-      duration: 3,
+      duration: 1,
       x: -20,
       ease: "power2.out",
     });
   }
 
+  const timeStaggers = 1.5;
   const openingContainerTl = gsap.timeline();
   openingContainerTl
     .from(".gsap-opening-container p", {
@@ -30,22 +33,19 @@ onMounted(() => {
       ease: "power2.out",
       delay: 0.2,
       clipPath: "circle(0%)",
-    });
-
-  const exclamationTl = gsap.timeline({
-    repeat: -1,
-    delay: 2.5,
-    repeatDelay: 2,
-  });
-  exclamationTl
-    .to(".gsap-exclamation", {
-      duration: 1,
-      rotate: 180,
-      ease: "bounce.out",
-      // i want to rotate the exclamation mark in the bottom
-      transformOrigin: "50% 80%",
-      y: 5,
     })
+    .to(
+      ".gsap-exclamation",
+      {
+        duration: 1,
+        rotate: 180,
+        ease: "bounce.out",
+        // i want to rotate the exclamation mark in the bottom
+        transformOrigin: "50% 80%",
+        y: 5,
+      },
+      ">-1",
+    )
     .to(
       ".gsap-exclamation",
       {
@@ -57,6 +57,26 @@ onMounted(() => {
       },
       "+=0.5",
     );
+
+  gsap.set(".gsap-image-branding-container", {
+    backgroundColor: "rgba(255, 255, 255, 0.5)",
+  });
+
+  gsap.to(".gsap-image-branding-container", {
+    scrollTrigger: {
+      trigger: ".gsap-image-branding-container",
+      start: "top top",
+      end: "bottom top",
+      scrub: 1,
+      onUpdate: (self) => {
+        const opacity = self.direction === -1 ? 0.5 : 0;
+        gsap.to(".gsap-image-branding-container", {
+          backgroundColor: `rgba(255, 255, 255, ${opacity})`,
+          ease: "power2.out",
+        });
+      },
+    },
+  });
 });
 </script>
 
@@ -113,11 +133,10 @@ onMounted(() => {
             reflects my growth, challenges, and accomplishments in these
             technologies.
           </p>
-          <!-- uncomment if there's another page exist -->
-          <!-- <p>
+          <p>
             If you're short on time to enjoy the full details, feel free to
             download my CV below.
-          </p> -->
+          </p>
         </div>
         <div class="w-20">
           <a href="/resume.pdf" download>
@@ -133,7 +152,7 @@ onMounted(() => {
       </div>
     </section>
     <section
-      class="bg-primary-light/[50%] relative col-span-8 flex items-center justify-center py-24 md:col-span-4 md:flex-none md:py-0"
+      class="gsap-image-branding-container bg-primary-light/[50%] relative col-span-8 flex items-center justify-center py-24 md:col-span-4 md:flex-none md:py-0"
     >
       <img
         src="/assets/images/introduction/me.png"
