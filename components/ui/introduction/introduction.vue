@@ -38,19 +38,15 @@ onMounted(() => {
     });
 
   gsap
-    .timeline({ repeat: -1, repeatDelay: 2 })
-    .to(
-      ".gsap-exclamation",
-      {
-        duration: 1,
-        rotate: 180,
-        ease: "bounce.out",
-        // i want to rotate the exclamation mark in the bottom
-        transformOrigin: "50% 80%",
-        y: 5,
-      },
-      ">-1",
-    )
+    .timeline({ repeat: -1, repeatDelay: 2, delay: 3.5 })
+    .to(".gsap-exclamation", {
+      duration: 1,
+      rotate: 180,
+      ease: "bounce.out",
+      // i want to rotate the exclamation mark in the bottom
+      transformOrigin: "50% 80%",
+      y: 5,
+    })
     .to(
       ".gsap-exclamation",
       {
