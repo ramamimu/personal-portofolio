@@ -1,5 +1,27 @@
 <script lang="ts" setup>
 import { projects } from "~/contents/projects";
+
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+onMounted(() => {
+  const projectTl = gsap.timeline();
+  projectTl.to(".gsap-project-box", {
+    scrollTrigger: {
+      trigger: ".gsap-project-box-container",
+      start: "top 60%",
+      end: "top 60%",
+      markers: true,
+      scrub: 1,
+    },
+    opacity: "100%",
+    stagger: {
+      amount: 0.2,
+    },
+  });
+});
 </script>
 
 <template>
@@ -12,11 +34,13 @@ import { projects } from "~/contents/projects";
         skills and grow stronger.
       </p>
     </div>
-    <div class="flex flex-wrap justify-center gap-10">
+    <div
+      class="gsap-project-box-container flex flex-wrap justify-center gap-10"
+    >
       <div
         v-for="project in projects"
         :key="project.title"
-        class="h-auto w-96 rounded-md bg-white/20 p-5 shadow-lg transition-all duration-500 ease-in-out hover:bg-white/50 hover:shadow-2xl"
+        class="gsap-project-box h-auto w-96 rounded-md bg-white/20 p-5 opacity-0 shadow-lg transition-all duration-500 ease-in-out hover:bg-white/50 hover:shadow-2xl"
       >
         <h2 class="pt-5 text-xl font-medium">
           {{ project.title }}

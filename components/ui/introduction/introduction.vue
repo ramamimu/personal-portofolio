@@ -17,8 +17,8 @@ onMounted(() => {
   }
 
   const timeStaggers = 1.5;
-  const openingContainerTl = gsap.timeline();
-  openingContainerTl
+  gsap
+    .timeline()
     .from(".gsap-opening-container p", {
       y: 80,
       stagger: timeStaggers,
@@ -33,7 +33,10 @@ onMounted(() => {
       ease: "power2.out",
       delay: 0.2,
       clipPath: "circle(0%)",
-    })
+    });
+
+  gsap
+    .timeline({ repeat: -1, repeatDelay: 2 })
     .to(
       ".gsap-exclamation",
       {
