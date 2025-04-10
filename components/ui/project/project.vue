@@ -4,7 +4,9 @@ import { projects } from "~/contents/projects";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 onMounted(() => {
   const projectTl = gsap.timeline();

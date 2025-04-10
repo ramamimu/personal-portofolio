@@ -4,7 +4,10 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 import { ref, type VNodeRef } from "vue";
 
-gsap.registerPlugin(ScrollTrigger);
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
+
 const storylineContainer = ref<VNodeRef | null>(null);
 </script>
 

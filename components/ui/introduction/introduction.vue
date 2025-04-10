@@ -3,7 +3,9 @@ import ButtonLight from "~/components/button/button-light.vue";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(ScrollTrigger);
+}
 
 onMounted(() => {
   // the openingContainer disappear using clip-path circle
