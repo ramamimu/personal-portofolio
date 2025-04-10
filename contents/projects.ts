@@ -90,7 +90,7 @@ export const projects: Project[] = [
     },
   },
   {
-    title: "Basestation IRIS 2023",
+    title: "Basestation IRIS",
     company: {
       associated: "IRIS ITS",
       logo: "/_nuxt/assets/images/companies/iris-its.png",
@@ -106,9 +106,10 @@ export const projects: Project[] = [
       "Web Socket",
       "Robot Operating System (ROS)",
       "boost c++ library",
-      "UDP unicast protocol",
-      "UDP multicast protocol",
-      "TCP protocol",
+      "Vuex",
+      "Vuetify",
+      "UDP",
+      "TCP",
     ],
     documentations: {
       image: {
@@ -119,6 +120,10 @@ export const projects: Project[] = [
         {
           name: "github front-end basestation",
           link: "https://github.com/ramamimu/fe-basestation_2023",
+        },
+        {
+          name: "Demonstration basestation IRIS 2022",
+          link: "https://www.linkedin.com/posts/ahmad-ferdiansyah-ramadhani_vuejs-activity-6958097936173973504-A17f?utm_source=share&utm_medium=member_desktop",
         },
       ],
     },
@@ -159,35 +164,6 @@ export const projects: Project[] = [
         {
           name: "github source code",
           link: "https://github.com/ramamimu/vue-postgreesql-chartjs",
-        },
-      ],
-    },
-  },
-  {
-    title: "Basestation IRIS 2022",
-    company: {
-      associated: "IRIS ITS",
-      logo: "/_nuxt/assets/images/companies/iris-its.png",
-    },
-    tools: [
-      "Vue.js",
-      "Vuex",
-      "Vuetify",
-      "Vue Konva (Canvas)",
-      "Node.js",
-      "Roslib.js",
-      "Web Socket",
-      "TCP protocol",
-    ],
-    documentations: {
-      image: {
-        link: "/_nuxt/assets/images/projects/bs-2022.png",
-        title: "UI Basestation 2022",
-      },
-      links: [
-        {
-          name: "Demonstration basestation IRIS 2022",
-          link: "https://www.linkedin.com/posts/ahmad-ferdiansyah-ramadhani_vuejs-activity-6958097936173973504-A17f?utm_source=share&utm_medium=member_desktop",
         },
       ],
     },
