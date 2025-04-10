@@ -13,7 +13,6 @@ onMounted(() => {
       trigger: ".gsap-project-box-container",
       start: "top 60%",
       end: "top 60%",
-      markers: true,
       scrub: 1,
     },
     opacity: "100%",
