@@ -9,26 +9,69 @@ if (typeof window !== "undefined") {
 }
 
 onMounted(() => {
-  const projectTl = gsap.timeline();
-  projectTl.to(".gsap-project-box", {
+  const projectTl = gsap.timeline({
     scrollTrigger: {
       trigger: ".gsap-project-box-container",
-      start: "top 60%",
-      end: "top 60%",
-      scrub: 1,
-    },
-    opacity: "100%",
-    stagger: {
-      amount: 0.2,
+      start: "top 80%",
+      end: "bottom 20%",
+      toggleActions: "play none none none",
     },
   });
+  projectTl.to(".gsap-project-box", {
+    opacity: "100%",
+    stagger: {
+      each: 0.2,
+    },
+  });
+});
+
+onMounted(() => {
+  const titleTl = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".gsap-project-title",
+      start: "top 80%",
+      end: "bottom 20%",
+      // play every time the title is in the viewport
+      toggleActions: "play none none none",
+      markers: true,
+    },
+    yoyoEase: "power2.inOut",
+  });
+
+  titleTl
+    .to(".gsap-project-title span", {
+      y: -20,
+      stagger: {
+        each: 0.1,
+        amount: 0.5,
+      },
+    })
+    .to(
+      ".gsap-project-title span",
+      {
+        y: 0,
+        stagger: {
+          each: 0.1,
+          amount: 0.5,
+        },
+      },
+      "-=0.4",
+    );
 });
 </script>
 
 <template>
   <div class="container mx-auto min-h-screen py-20">
     <div class="max-w-[700px] px-4 py-32 md:px-32 md:py-72">
-      <h1 class="text-lv-1 tracking-wide text-gray-800">Projects</h1>
+      <h1 class="gsap-project-title text-lv-1 tracking-wide text-gray-800">
+        <span
+          v-for="(letter, index) in 'Projects'"
+          :key="index"
+          class="inline-block"
+        >
+          {{ letter }}
+        </span>
+      </h1>
       <p class="mt-4 text-gray-600">
         Through this project, i’m not just building something but also building
         potentials. Every challenge in this project is an opportunity to sharpen
@@ -66,6 +109,7 @@ onMounted(() => {
             v-for="doc in project.documentations.links"
             :key="doc.name"
             :href="doc.link"
+            target="_blank"
             class="rounded-sm border bg-slate-600 p-1 text-xs tracking-wider text-white transition-all duration-300 hover:bg-slate-100 hover:text-slate-800"
           >
             {{ doc.name }}
