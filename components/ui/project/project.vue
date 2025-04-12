@@ -30,9 +30,9 @@ onMounted(() => {
     scrollTrigger: {
       trigger: ".gsap-project-title",
       start: "top 80%",
-      end: "bottom 20%",
+      end: "top 20%",
       // play every time the title is in the viewport
-      toggleActions: "play none none none",
+      toggleActions: "restart none restart none",
     },
     yoyoEase: "power2.inOut",
   });
@@ -83,7 +83,7 @@ onMounted(() => {
       <div
         v-for="project in projects"
         :key="project.title"
-        class="gsap-project-box h-auto w-96 rounded-md bg-white/20 p-5 opacity-0 shadow-lg transition-all duration-500 ease-in-out hover:bg-white/50 hover:shadow-2xl"
+        class="gsap-project-box h-auto rounded-md bg-white/20 p-5 opacity-0 shadow-lg transition-all duration-500 ease-in-out hover:bg-white/50 hover:shadow-2xl sm:p-24 lg:w-96 lg:p-5"
       >
         <h2 class="pt-5 text-xl font-medium">
           {{ project.title }}
