@@ -33,7 +33,6 @@ onMounted(() => {
       end: "bottom 20%",
       // play every time the title is in the viewport
       toggleActions: "play none none none",
-      markers: true,
     },
     yoyoEase: "power2.inOut",
   });
