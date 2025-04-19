@@ -25,8 +25,12 @@ export const projects: Project[] = [
       },
       links: [
         {
-          name: "github chatbot API",
+          name: "github",
           link: "https://github.com/ramamimu/chatbot-api",
+        },
+        {
+          name: "demo",
+          link: "https://www.linkedin.com/posts/ahmad-ferdiansyah-ramadhani_usercentereddesign-chatbotdevelopment-uiuxdesign-activity-7226098590736117760-xdq8?utm_source=share&utm_medium=member_desktop&rcm=ACoAADTX4BMBZj78V4xqB5uEOcBcvAfISOSIFRc",
         },
       ],
     },
@@ -118,11 +122,11 @@ export const projects: Project[] = [
       },
       links: [
         {
-          name: "github front-end basestation",
+          name: "github front-end",
           link: "https://github.com/ramamimu/fe-basestation_2023",
         },
         {
-          name: "Demonstration basestation IRIS 2022",
+          name: "Demo",
           link: "https://www.linkedin.com/posts/ahmad-ferdiansyah-ramadhani_vuejs-activity-6958097936173973504-A17f?utm_source=share&utm_medium=member_desktop",
         },
       ],
@@ -149,26 +153,6 @@ export const projects: Project[] = [
     },
   },
   {
-    title: "Library Database System",
-    company: {
-      associated: "ITS Surabaya",
-      logo: "/images/companies/its-surabaya.png",
-    },
-    tools: ["Vue.js", "Tailwind CSS", "Chart.js", "Node.js", "Express"],
-    documentations: {
-      image: {
-        link: "/images/projects/library-db.png",
-        title: "UI Library Management System",
-      },
-      links: [
-        {
-          name: "github source code",
-          link: "https://github.com/ramamimu/vue-postgreesql-chartjs",
-        },
-      ],
-    },
-  },
-  {
     title: "Front-end TedxITS 2022",
     company: {
       associated: "ITS Surabaya",
@@ -180,12 +164,7 @@ export const projects: Project[] = [
         link: "/images/projects/tedx-its.png",
         title: "Landing Page TedxITS 2022",
       },
-      links: [
-        {
-          name: "Website TedxITS 2022",
-          link: "https://2022.tedxits.org/",
-        },
-      ],
+      links: [],
     },
   },
 ];

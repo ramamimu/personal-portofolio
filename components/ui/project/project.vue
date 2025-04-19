@@ -3,6 +3,7 @@ import { projects } from "~/contents/projects";
 
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import WaveText from "~/components/wave-text/wave-text.vue";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -24,57 +25,19 @@ onMounted(() => {
     },
   });
 });
-
-onMounted(() => {
-  const titleTl = gsap.timeline({
-    scrollTrigger: {
-      trigger: ".gsap-project-title",
-      start: "top 80%",
-      end: "top 20%",
-      // play every time the title is in the viewport
-      toggleActions: "restart none restart none",
-    },
-    yoyoEase: "power2.inOut",
-  });
-
-  titleTl
-    .to(".gsap-project-title span", {
-      y: -20,
-      stagger: {
-        each: 0.1,
-        amount: 0.5,
-      },
-    })
-    .to(
-      ".gsap-project-title span",
-      {
-        y: 0,
-        stagger: {
-          each: 0.1,
-          amount: 0.5,
-        },
-      },
-      "-=0.4",
-    );
-});
 </script>
 
 <template>
   <div class="container mx-auto min-h-screen py-20">
     <div class="max-w-[700px] px-4 py-32 md:px-32 md:py-72">
       <h1 class="gsap-project-title text-lv-1 tracking-wide text-gray-800">
-        <span
-          v-for="(letter, index) in 'Projects'"
-          :key="index"
-          class="inline-block"
-        >
-          {{ letter }}
-        </span>
+        <WaveText text="Projects" attributeName="gsap-project-title" />
       </h1>
       <p class="mt-4 text-gray-600">
-        Through this project, i’m not just building something but also building
-        potentials. Every challenge in this project is an opportunity to sharpen
-        skills and grow stronger.
+        Through these projects, i’m not just building something but also
+        building potentials. Every challenge is an opportunity to sharpen skills
+        and unlock new possibilities which showing on some of the projects that
+        showcase below.
       </p>
     </div>
     <div
@@ -83,7 +46,7 @@ onMounted(() => {
       <div
         v-for="project in projects"
         :key="project.title"
-        class="gsap-project-box h-auto rounded-md bg-white/20 p-5 opacity-0 shadow-lg transition-all duration-500 ease-in-out hover:bg-white/50 hover:shadow-2xl sm:p-24 lg:w-96 lg:p-5"
+        class="gsap-project-box h-auto rounded-md bg-white/20 p-5 opacity-0 shadow-lg transition-all duration-500 ease-in-out hover:bg-white/50 sm:p-24 md:hover:shadow-2xl lg:w-96 lg:p-5"
       >
         <h2 class="pt-5 text-xl font-medium">
           {{ project.title }}
