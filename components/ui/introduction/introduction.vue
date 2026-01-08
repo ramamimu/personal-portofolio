@@ -64,10 +64,10 @@ onMounted(() => {
 <template>
   <div class="relative grid min-h-screen grid-cols-8 overflow-hidden bg-center">
     <section
-      class="bg-dark relative col-span-8 flex items-center justify-center px-3 text-white sm:px-0 md:col-span-4"
+      class="bg-slate-700 relative col-span-8 flex items-center justify-center px-3 text-white sm:px-0 md:col-span-4 rounded-br-4xl"
     >
       <div
-        class="gsap-opening-container bg-primary-dark absolute z-10 flex h-full w-full flex-col items-center justify-center text-5xl"
+        class="gsap-opening-container bg-primary-dark absolute z-10 flex h-full w-full flex-col items-center justify-center text-5xl rounded-br-4xl"
         style="clip-path: circle(100%)"
       >
         <div>
@@ -102,7 +102,7 @@ onMounted(() => {
         >
           Get to<br />know me<span class="gsap-exclamation absolute">!</span>
         </h1>
-        <div class="flex flex-col space-y-4 text-base">
+        <div class="flex flex-col space-y-4 text-base text-slate-200">
           <p>
             This work serves as documentation of my journey as a software
             engineer. It is my personal reward—a reminder of how far I've come.
@@ -133,7 +133,7 @@ onMounted(() => {
       </div>
     </section>
     <section
-      class="gsap-image-branding-container bg-primary-light/[50%] relative col-span-8 flex items-center justify-center py-24 md:col-span-4 md:flex-none md:py-0"
+      class="gsap-image-branding-container relative col-span-8 flex items-center justify-center py-24 md:col-span-4 md:flex-none md:py-0"
     >
       <img
         src="/assets/images/introduction/me.png"
