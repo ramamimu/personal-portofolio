@@ -18,7 +18,7 @@ onMounted(() => {
     });
   }
 
-  const timeStaggers = 1.5;
+  const timeStaggers = 0.8;
   gsap
     .timeline()
     .from(".gsap-opening-container p", {
@@ -64,7 +64,7 @@ onMounted(() => {
 <template>
   <div class="relative grid min-h-screen grid-cols-8 overflow-hidden bg-center">
     <section
-      class="bg-slate-700 relative col-span-8 flex items-center justify-center px-3 text-white sm:px-0 md:col-span-4 rounded-br-4xl"
+      class="bg-slate-600 relative col-span-8 flex items-center justify-center px-3 text-white sm:px-0 md:col-span-4 rounded-br-4xl"
     >
       <div
         class="gsap-opening-container bg-primary-dark absolute z-10 flex h-full w-full flex-col items-center justify-center text-5xl rounded-br-4xl"

@@ -17,4 +17,5 @@ export type Project = {
   };
   tools: string[];
   documentations: Documentations;
+  description: string;
 };
