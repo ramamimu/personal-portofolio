@@ -2,6 +2,77 @@ import type { Project } from "@/types/projects";
 
 export const projects: Project[] = [
   {
+    id: "imc-pas-web",
+    title: "IMC PAS Web (Monitoring Telecommunication Management System)",
+    company: {
+      associated: "PT Pasopati Nusantara",
+      logo: "/images/companies/pasopati.jpeg",
+    },
+    description: `
+A redesigned website for State Detention Centers (RUTAN) under the Directorate General of Corrections (Ditjen PAS), Ministry of Law and Human Rights, managed by PT Pasopati Nusantara.
+
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
+    `,
+    documentations: {
+      image: {
+        link: "/images/projects/imcpas.png",
+        title: "IMC PAS Web Login Page",
+      },
+      links: [],
+    },
+    tools: [
+      "Vue.js",
+      "Nuxt.js",
+      "Pinia",
+      "Tailwind CSS",
+      "Python",
+      "Golang",
+      "RabbitMQ",
+      "Docker",
+      "PostgreSQL",
+    ],    
+  },
+  {
+    id: "chatbot-rag",
     title: "Chatbot Using Retrieval-Augmented Generation (RAG)",
     company: {
       associated: "ITS Surabaya",
@@ -43,6 +114,7 @@ The chatbot is able to use document (PDF) or text as reference for answering inc
 For seamless communication, i put all of the process to be Back End Service using Fast API.`
   },
   {
+    id: "bangkit-capstone",
     title: "Recommendation Places App in Yogyakarta",
     company: {
       associated: "Project Capstone Bangkit",
@@ -88,6 +160,7 @@ This basestation has been validated in national and international robotic compet
     `
   },
   {
+    id: "pjb-pln-web",
     title: "Monitoring and Controlling Turbines Website",
     company: {
       associated: "PLN Nusantara Power",
@@ -115,6 +188,7 @@ A freelance project for PT PLN Nusantara Power which is build an integrated moni
 `
   },
   {
+    id: "basestation-iris",
     title: "Basestation IRIS",
     company: {
       associated: "IRIS ITS",
@@ -155,6 +229,7 @@ A freelance project for PT PLN Nusantara Power which is build an integrated moni
     description: `Managing and monitoring autonomous robotic competitions on via realtime web based platform.`
   },
   {
+    id: "iris-web-2022",
     title: "Website IRIS 2022",
     company: {
       associated: "IRIS ITS",
@@ -176,6 +251,7 @@ A freelance project for PT PLN Nusantara Power which is build an integrated moni
     description: `Redesign and develop the official website of IRIS ITS using React.js and Next.js with Tailwind CSS for styling. The website serves as a platform to showcase the team's achievements, projects, and provide information about upcoming events and competitions.`
   },
   {
+    id: "tedx-its-2022",
     title: "Front-end TedxITS 2022",
     company: {
       associated: "ITS Surabaya",

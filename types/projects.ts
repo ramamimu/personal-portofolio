@@ -10,6 +10,7 @@ type Documentations = {
 };
 
 export type Project = {
+  id: string;
   title: string;
   company: {
     logo: string;
