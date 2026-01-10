@@ -8,8 +8,7 @@ export const projects: Project[] = [
       associated: "PT Pasopati Nusantara",
       logo: "/images/companies/pasopati.jpeg",
     },
-    description: `
-A redesigned website for State Detention Centers (RUTAN) under the Directorate General of Corrections (Ditjen PAS), Ministry of Law and Human Rights, managed by PT Pasopati Nusantara.
+    description: `A redesigned website for State Detention Centers (RUTAN) under the Directorate General of Corrections (Ditjen PAS), Ministry of Law and Human Rights, managed by PT Pasopati Nusantara.
 
 The platform features two versions with multiple user roles, providing a modern and efficient management system. Key features include: Dashboard for data monitoring and insights, Simultaneous bulk download with non-blocking performance, user management, transaction tracking and financial history tables (including top-ups, deposits, and financial reports)    
     `,
@@ -66,7 +65,7 @@ The platform features two versions with multiple user roles, providing a modern 
         },
       ],
     },
-    description:`a chatbot which able to answer question from documents. Once the question throwing to the chatbot, it will see through documents as reference and answer all of question based on it
+    description:`A chatbot that can answer questions from documents. Once the question is thrown to the chatbot, it will see through documents as reference and answer all of question based on it.
 
 The chatbot is able to use document (PDF) or text as reference for answering incoming question. The method called RAG (Retrieval-Augmented Generation) which consist of three processing: 
 1. Indexing - Split, embed, and put the text into vector database (Vectorstore); 
@@ -144,9 +143,7 @@ This basestation has been validated in national and international robotic compet
       },
       links: [],
     },
-    description: `build an integrated monitoring system to manage turbines configurations (20+) and monitor the status in almost realtime. Responsible to create UI and BE using Vue and Express.
-A freelance project for PT PLN Nusantara Power which is build an integrated monitoring system to manage turbines configurations (20+) and monitor the status in almost realtime. Responsible to create UI and BE using Vue and Express.
-`
+    description: `build an integrated monitoring system to manage turbines configurations (20+) and monitor the status in almost realtime. Responsible to create UI and BE using Vue and Express.`
   },
   {
     id: "basestation-iris",
