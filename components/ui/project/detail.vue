@@ -17,9 +17,12 @@ const close = () => {
 };
 </script>
 <template>
-    <PopupContainer v-if="projectDetailStore.isActive">
+    <PopupContainer 
+        v-if="projectDetailStore.isActive"
+        @close="close"
+    >
         <div
-            class="flex w-full max-w-5xl flex-col overflow-hidden rounded-md bg-slate-100 p-5 shadow-2xl sm:p-8 max-h-[calc(100vh-2rem)]"
+            class="flex w-full max-w-5xl flex-col overflow-hidden rounded-md bg-slate-100 p-5 shadow-2xl sm:p-8 h-full md:max-h-[calc(100vh-2rem)]"
         >
             <div v-if="project" class="flex min-h-0 flex-col gap-6">
                 <div>

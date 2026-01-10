@@ -56,7 +56,7 @@ const openProjectDetail = (projectId: string) => {
       <div
         v-for="project in projects"
         :key="project.title"
-        class="gsap-project-box h-auto rounded-md bg-white/20 p-5 opacity-0 shadow-lg transition-all duration-500 ease-in-out hover:bg-white/50 sm:p-24 md:hover:shadow-2xl lg:w-96 lg:p-5 cursor-pointer"
+        class="gsap-project-box h-auto rounded-md bg-white/20 p-5 opacity-0 shadow-lg transition-all duration-500 ease-in-out md:hover:bg-white/50 sm:p-24 md:hover:shadow-2xl lg:w-96 lg:p-5 cursor-pointer"
         @click="openProjectDetail(project.id)"
       >
         <h2 class="pt-5 text-xl font-medium">

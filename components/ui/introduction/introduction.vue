@@ -38,7 +38,7 @@ onMounted(() => {
     });
 
   gsap
-    .timeline({ repeat: -1, repeatDelay: 2, delay: 3.5 })
+    .timeline({ repeat: -1, repeatDelay: 2, delay: 3 })
     .to(".gsap-exclamation", {
       duration: 1,
       rotate: 180,
