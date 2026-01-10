@@ -5,6 +5,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import WaveText from "~/components/wave-text/wave-text.vue";
 
+
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
@@ -25,10 +26,19 @@ onMounted(() => {
     },
   });
 });
+
+const projectDetailStore = useProjectDetailStore();
+
+const openProjectDetail = (projectId: string) => {
+  projectDetailStore.setProjectId(projectId);
+  projectDetailStore.setIsActive(true);
+};
 </script>
 
 <template>
-  <div class="container mx-auto min-h-screen py-20">
+  <div 
+    class="container mx-auto min-h-screen py-20"
+  >
     <div class="max-w-[700px] px-4 py-32 md:px-32 md:py-72">
       <h1 class="gsap-project-title text-lv-1 tracking-wide text-gray-800">
         <WaveText text="Projects" attributeName="gsap-project-title" />
@@ -46,7 +56,8 @@ onMounted(() => {
       <div
         v-for="project in projects"
         :key="project.title"
-        class="gsap-project-box h-auto rounded-md bg-white/20 p-5 opacity-0 shadow-lg transition-all duration-500 ease-in-out hover:bg-white/50 sm:p-24 md:hover:shadow-2xl lg:w-96 lg:p-5"
+        class="gsap-project-box h-auto rounded-md bg-white/20 p-5 opacity-0 shadow-lg transition-all duration-500 ease-in-out md:hover:bg-white/50 sm:p-24 md:hover:shadow-2xl lg:w-96 lg:p-5 cursor-pointer"
+        @click="openProjectDetail(project.id)"
       >
         <h2 class="pt-5 text-xl font-medium">
           {{ project.title }}

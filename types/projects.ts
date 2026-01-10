@@ -10,6 +10,7 @@ type Documentations = {
 };
 
 export type Project = {
+  id: string;
   title: string;
   company: {
     logo: string;
@@ -17,4 +18,5 @@ export type Project = {
   };
   tools: string[];
   documentations: Documentations;
+  description: string;
 };
